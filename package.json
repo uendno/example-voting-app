@@ -1,0 +1,23 @@
+{
+  "name": "example-voting-app",
+  "version": "1.0.0",
+  "description": "Example Voting App =========",
+  "main": "cd.js",
+  "dependencies": {
+    "cdjs-runner": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uendno/example-voting-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uendno/example-voting-app/issues"
+  },
+  "homepage": "https://github.com/uendno/example-voting-app#readme"
+}
