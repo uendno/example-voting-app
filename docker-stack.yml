@@ -86,7 +86,7 @@ networks:
     external:
       name: vote-frontend
   backend:
-    external
+    external:
       name: vote-backend
 
 volumes:
