@@ -8,7 +8,6 @@ cd.stages([
 
     cd.stage('Deploy', () => {
         return cd.steps()
-            .then(cd.shell('docker stack rm vote'))
-            .then(cd.shell('docker stack deploy --compose-file docker-stack.yml vote'))
+            .then(cd.shell('docker-compose up'))
     })
 ])
