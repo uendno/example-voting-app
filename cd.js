@@ -8,6 +8,6 @@ cd.stages([
 
     cd.stage('Deploy', () => {
         return cd.steps()
-            .then(cd.shell('docker-compose up'))
+            .then(cd.shell('docker-compose up -d'))
     })
 ])
