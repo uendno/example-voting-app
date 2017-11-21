@@ -82,8 +82,10 @@ services:
         constraints: [node.role == manager]
 
 networks:
-  frontend:
-  backend:
+  vote-frontend:
+    external: true
+  vote-backend:
+    external: true
 
 volumes:
   db-data:
