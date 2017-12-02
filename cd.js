@@ -1,13 +1,11 @@
-const cd = require('/Users/uendno/Sourcecode/cdjs-agent');
+const cd = require('/Users/uendno/Sourcecode/cdjs-runner');
 
 cd.stages([
     cd.stage('Build', () => {   
-        return cd.steps()
-            .then(cd.shell('docker-compose build'))
+        return cd.exec(cd.shell('docker-compose build'))
     }),
 
     cd.stage('Deploy', () => {
-        return cd.steps()
-            .then(cd.shell('docker-compose up -d'))
+        return cd.exec(cd.shell('docker-compose up -d'))
     })
 ])
